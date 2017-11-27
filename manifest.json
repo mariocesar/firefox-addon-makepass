@@ -1,0 +1,22 @@
+{
+    "description": "Add a button to create a random password",
+    "developer": {
+        "name": "Mario Cesar"
+    },
+    "manifest_version": 2,
+    "name": "Generate Secure Password",
+    "version": "0.4",
+    "icons": {
+        "128": "make-password-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*", "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
